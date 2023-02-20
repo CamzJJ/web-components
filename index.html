@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      
+        main color #087f5b
+        text color  #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .navigation {
+        background-color: #343a40;
+        padding: 1.5rem 0;
+      }
+      .nav__list {
+        margin: 0 auto;
+        max-width: fit-content;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+
+      .nav__link {
+        font-weight: 600;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5em 1em;
+        transition: all 300ms;
+        transform: scale(100%);
+      }
+      .nav__link:hover {
+        transform: scale(120%);
+        background-color: #087f5b;
+      }
+      .textbox {
+        max-width: 540px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #087f5b;
+        color: #fff;
+        line-height: 1.3em;
+        border-radius: 0.5em;
+        box-shadow: 0 12px 24px rgb(0 0 0 /30%);
+      }
+      .text-link {
+        text-decoration: none;
+        background-color: #343a40;
+        color: #fff;
+        padding: 3px;
+        transition: all 300ms;
+      }
+      .text-link:hover {
+        color: #343a40;
+        background-color: #c3fae8;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="/01-accordion.html" class="nav__link">accordion</a>
+        </li>
+        <li class="nav__item">
+          <a href="/02-carousel.html" class="nav__link">carousel</a>
+        </li>
+        <li class="nav__item">
+          <a href="/03-table.html" class="nav__link">table</a>
+        </li>
+        <li class="nav__item">
+          <a href="/04-pagination.html" class="nav__link">pagination</a>
+        </li>
+        <li class="nav__item">
+          <a href="/05-hero.html" class="nav__link">hero</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="textbox">
+      <p class="paragraph">
+        I built these designs that as part of
+        <a
+          class="text-link"
+          href="https://www.udemy.com/user/jonasschmedtmann/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Jonas Schmedtmann's</a
+        >
+        <b>"Build Responsive Real-World Websites with HTML and CSS"</b> course.
+      </p>
+    </div>
+  </body>
+</html>
